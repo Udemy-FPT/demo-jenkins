@@ -30,5 +30,5 @@ COPY .env.production .env
 #CMD ["node", "dist/apps/friends/main.js"]
 #CMD ["node", "dist/apps/campaigns/main.js"]
 #CMD ["node", "dist/apps/reports/main.js"]
-CMD ["node", "dist/apps/broadcasts/main.js"]
+CMD ["node", "dist/apps/dev/main.js"]
 
