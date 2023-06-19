@@ -43,11 +43,6 @@ COPY --from=build /home/source/dist ./dist
 COPY --from=build /home/source/libs ./libs
 COPY .env.production .env
 
-#CMD ["node", "dist/apps/auth-microservice/main.js"]
-#CMD ["node", "dist/apps/conversations/main.js"]
-#CMD ["node", "dist/apps/friends/main.js"]
-#CMD ["node", "dist/apps/campaigns/main.js"]
-#CMD ["node", "dist/apps/reports/main.js"]
 CMD ["node", "dist/apps/dev/main.js"]
 
 
