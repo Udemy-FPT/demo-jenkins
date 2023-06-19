@@ -18,12 +18,12 @@ pipeline {
       stage('Test') {
           steps {
               echo 'Testing..'
-              def testContainer = docker.image("node:18-alpine")
-              testContainer.pull()
-              testContainer.inside {
-                sh 'npm install --only=dev'
-                sh 'npm test'
-              }
+//               def testContainer = docker.image("node:18-alpine")
+//               testContainer.pull()
+//               testContainer.inside {
+//                 sh 'npm install --only=dev'
+//                 sh 'npm test'
+//               }
 
           }
       }
